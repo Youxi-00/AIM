@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="brand">
+                <h2>PowerPuff Vape</h2>
+            </div>
+            <ul class="menu">
+                <li><a href="#" id="dashboard-btn" class="active">Dashboard</a></li>
+                <li><a href="#" id="order-btn">Order</a></li>
+                <li><a href="#">Suppliers</a></li>
+                <li><a href="#">Users</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Stocks</a></li>
+                <li><a href="#">Reports</a></li>
+            </ul>
+            <button class="logout">Logout</button>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Dashboard Page -->
+            <section id="dashboard-page" class="page active">
+                <header class="top-nav">
+                    <input type="text" placeholder="Search here..." />
+                    <div class="nav-icons">
+                        <span>Support</span>
+                        <span>Settings</span>
+                        <span>Meow</span>
+                    </div>
+                </header>
+                <div class="content">
+                    <div class="welcome-box">
+                        <h2>Hello and welcome!</h2>
+                    </div>
+                    <div class="overview">
+                        <div class="overview-card">
+                            <h3>Last week overview</h3>
+                            <p>$120,537.90</p>
+                            <small>▼ 9.5%</small>
+                            <div class="chart-line"></div>
+                        </div>
+                        <div class="overview-card">
+                            <div class="chart-bar"></div>
+                        </div>
+                    </div>
+                    <div class="computations">
+                        <h3>Computations</h3>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Order Page -->
+            <section id="order-page" class="page">
+                <header class="top-nav">
+                    <input type="text" placeholder="Search here..." />
+                    <div class="nav-icons">
+                        <span>Support</span>
+                        <span>Settings</span>
+                        <span>Meow</span>
+                    </div>
+                </header>
+                <div class="content">
+                    <div class="welcome-box">
+                        <h2>Orders whatever</h2>
+                    </div>
+                    <div class="orders-grid">
+                        <div class="order-card">Order 1</div>
+                        <div class="order-card">Order 2</div>
+                        <div class="order-card">Order 3</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- JavaScript to toggle between pages -->
+    <script src="script.js"></script>
+</body>
+</html>
